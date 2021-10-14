@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-top: 60px;
+    font-family: 'Montserrat', sans-serif; 
+    line-height: 1.5;
+    color: #212529;
+}
+
+label {
+    display: block;
+}
+
+input, select {
+    width: 100%;
+    border: 1px solid #ced4da;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    outline: none;
+    -webkit-transition: border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;   
+}
+
+input:focus, select:focus {
+    border: 1px solid red;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(179, 0, 0, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(179, 0, 0, 0.25);
+}
+
+h2 {
+    color: #0b5a99;
+    font-size: 32px;
+}
+
+.font-weight-normal {
+    font-weight: 400!important;
+}
+
+.font-weight-medium {
+    font-weight: 500!important;
+}
+
+.text-left {
+    text-align: left!important;
+}
+
+#order-page {
+    max-width: 960px;
+    margin: 0 auto;
+    border: 1px solid salmon;
+    padding: 2% 4%;
+}
+
+p {
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.border-top {
+    border-top: 1px solid #dee2e6!important;
+    margin: 20px 0 10px 0;
+}
+
+#continue, #back {
+    /* border: 1px solid #00589b;
+    background: #00589b; */
+    padding: 5px;
+    background-color: #fff;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#continue:hover, #back:hover {
+    cursor: pointer;
+}
+
+
+/* ----CHEVRONS CREATED FROM CODEPEN BY ELISE FERGUSON ----- */
+.chevron::before {
+    border-style: solid;
+    border-width: 0.15em 0.15em 0 0;
+    content: '';
+    display: inline-block;
+    height: 0.55em;
+    left: 0.15em;
+    position: relative;
+    top: 0.4em;
+    transform: rotate(-45deg);
+    vertical-align: top;
+    width: 0.55em;
+}
+
+.chevron.right:before {
+	left: 0;
+	transform: rotate(45deg);
+}
+
+.chevron.bottom:before {
+	top: 0;
+	transform: rotate(135deg);
+}
+
+.chevron.left:before {
+	left: 0.25em;
+	transform: rotate(-135deg);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.col-3 {
+    width: 20%; 
+}
+.col-5 {
+    width: 27%;
+}
+.col-7 {
+    width: 40%;
+}
+
+.col-lg-6 {
+    width: 100%;
+}
+
+.small {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.text-muted mb-3 {
+    color: #6c757d!important;
+}
+
+.wpcf7-submit{
+    color: #fff;
+    background-color: #00589b;
+    background-image: none;
+    border-color: #00589b;
+}
+.wpcf7-submit:hover {
+    border: 1px solid #4a8dc0;
+    background-color: #4a8dc0;
+    cursor: pointer;
+}
+
+.wpcf7-not-valid-tip {
+    color: #dc3545;
+    display: none;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+
+.wpcf7-response-output {
+    margin: 2em 0.5em 1em;
+    padding: 0.2em 1em;
+    border: 2px solid #ffb900;
+    display: none;
+}
+
+
+/* ----------------- MEDIA QUERIES -------------------- */
+@media (min-width: 992px) {
+    .col-lg-6 {
+        width: 45%;
+    }
+}
